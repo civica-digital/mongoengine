@@ -61,7 +61,7 @@ class StringField(BaseField):
 
     def from_python(self, value):
         if isinstance(value, str):
-            return value.decode('utf8')
+            return value
         else:
             return super(StringField, self).from_python(value)
 
